@@ -7,6 +7,25 @@
 # Ignore bundler config.
 /.bundle
 
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore the default MySQL database.
+/db/*.mysql-journal
+/db/*.mysql*
+/db/*.mysql
+
+# Ignore other unneeded files.
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
