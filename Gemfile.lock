@@ -37,8 +37,14 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    autoprefixer-rails (6.2.3)
+      execjs
+      json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     builder (3.2.2)
     byebug (8.2.1)
     capybara (2.2.1)
@@ -225,20 +231,21 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   byebug
-  capybara (~> 2.2.0)
+  capybara
   coffee-rails (~> 4.1.0)
-  guard-rspec (= 4.6.0)
+  guard-rspec
   jbuilder (~> 2.0)
   jquery-rails
   mysql
   pg (= 0.15.1)
   rails (= 4.2.4)
   rails_12factor (= 0.0.2)
-  rspec-rails (= 3.3.2)
+  rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  selenium-webdriver (= 2.35.1)
+  selenium-webdriver
   spring
   test-unit
   turbolinks

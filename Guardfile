@@ -69,7 +69,7 @@ guard :rspec, cmd: "bundle exec rspec" do
   end
 end
 
-guard 'rspec', all_after_pass: false do
+guard 'rspec', all_after_pass: false, cmd: 'rspec' do
   watch('config/routes.rb')
   # Custom Rails Tutorial specs
   watch(%r{^app/controllers/(.+)_(controller)\.rb$}) do |m|

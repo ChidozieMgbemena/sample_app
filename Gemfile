@@ -33,13 +33,16 @@ gem 'test-unit'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+#adding bootstrap and asset pipeline 
+gem 'bootstrap-sass'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rspec-rails', '3.3.2'
+  gem 'rspec-rails'
   
   #Guard is used for automated testing with rspec
-  gem 'guard-rspec', '4.6.0'
+  gem 'guard-rspec'
 end
 
 group :development do
@@ -51,8 +54,8 @@ group :development do
 end
 
 group :test do
-  gem 'selenium-webdriver', '2.35.1'
-  gem 'capybara', '~> 2.2.0'
+  gem 'selenium-webdriver'
+  gem 'capybara'
 end
 
 group :production do
