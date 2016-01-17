@@ -7,7 +7,7 @@ describe "User Pages" do
   describe "signup page" do
     before { visit signup_path }
 
-    let(:submit) { "Create my account" }
+    let(:submit) { "Create my Account" }
 
     describe "with invalid information" do
       it "should not create a user" do
@@ -39,5 +39,16 @@ describe "User Pages" do
     it { should have_content(user.name) }
     it { should have_title(user.name) }
   end
+
+  describe "after submission" do
+    before { visit signup_path }
+    let(:submit) { "Create my Account" }
+    before { click_button submit }
+
+    it { should have_title('Sign Up') }
+    it { should have_content('error') }
+  end
+
+
 
 end 
