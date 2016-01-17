@@ -46,6 +46,9 @@ group :development, :test do
   
   #Guard is used for automated testing with rspec
   gem 'guard-rspec'
+
+  #defines model objects and inserts them in the database
+  gem 'factory_girl_rails'
 end
 
 group :development do
