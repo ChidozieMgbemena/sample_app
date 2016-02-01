@@ -39,6 +39,13 @@ gem 'bootstrap-sass'
 #Adding bcrypt gem for creating password hash function
 gem 'bcrypt-ruby'
 
+#generate sample data
+gem 'faker'
+
+#add pagination to user index page
+gem 'will_paginate'
+gem 'bootstrap-will_paginate' 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
