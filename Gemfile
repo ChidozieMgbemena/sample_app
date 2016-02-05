@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
@@ -25,7 +25,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # test unit to make rspec testing work in Ruby 2.2
 gem 'test-unit'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -37,7 +36,7 @@ gem 'test-unit'
 gem 'bootstrap-sass'
 
 #Adding bcrypt gem for creating password hash function
-gem 'bcrypt-ruby'
+gem 'bcrypt'
 
 #generate sample data
 gem 'faker'
