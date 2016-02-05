@@ -13,10 +13,10 @@ class User < ActiveRecord::Base
   
   has_secure_password
 
-  #def feed
+  def feed
     # This is preliminary. See "Following users" for the full implementation.
-   # Micropost.where("user_id = ?", id)
-  #end
+    Micropost.where("user_id = ", id)
+  end
 
   def following?(other_user)
     relationships.find_by(followed_id: other_user.id)
