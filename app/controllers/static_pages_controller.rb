@@ -7,13 +7,13 @@ class StaticPagesController < ApplicationController
     end
   end
 
-  def help
+  def tables
   end
  
   def about
   end
   
-  def contact
+  def rules
   end
 
 end

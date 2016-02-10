@@ -16,11 +16,11 @@ Rails.application.routes.draw do
 
   match '/signup', to: 'users#new', via: 'get'  
 
-  match '/help', to: 'static_pages#help', via: 'get'
+  match '/tables', to: 'static_pages#tables', via: 'get'
   
   match '/about', to: 'static_pages#about', via: 'get'  
 
-  match '/contact', to: 'static_pages#contact', via: 'get'
+  match '/rules', to: 'static_pages#rules', via: 'get'
 
   match '/signin', to: 'sessions#new', via: 'get'
 
