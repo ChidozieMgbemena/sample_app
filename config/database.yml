@@ -16,6 +16,7 @@ default: &default
   username: pguser
   password: Password1
   socket: /var/run/mysqld/mysqld.sock
+  host: localhost
 
 development:
   <<: *default
