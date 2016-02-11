@@ -16,4 +16,10 @@ class StaticPagesController < ApplicationController
   def rules
   end
 
+  def fixtures
+  end
+
+  def forums
+  end
+
 end

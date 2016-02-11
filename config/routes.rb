@@ -22,6 +22,10 @@ Rails.application.routes.draw do
 
   match '/rules', to: 'static_pages#rules', via: 'get'
 
+  match '/fixtures', to: 'static_pages#fixtures', via: 'get'
+  
+  match '/forums', to: 'static_pages#forums', via: 'get'
+ 
   match '/signin', to: 'sessions#new', via: 'get'
 
   match '/signout', to: 'sessions#destroy', via: 'delete'
