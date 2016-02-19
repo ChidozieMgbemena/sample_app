@@ -10,10 +10,10 @@
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
 #
 default: &default
-  adapter: postgresql
+  adapter: mysql
   encoding: utf8
   pool: 5
-  username: pguser
+  username: root
   password: Password1
   socket: /var/run/mysqld/mysqld.sock
   host: localhost
