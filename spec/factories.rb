@@ -1,4 +1,7 @@
-FactoryGirl.define do 
+FactoryGirl.define do  factory :game do
+    fixtures "MyString"
+  end
+ 
 
   factory :relationship do
     follower_id 1
