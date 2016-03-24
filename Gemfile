@@ -2,10 +2,6 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
-# Use mysql as the database for Active Record
-gem 'mysql'
-# Use mysql as the database for Active Record
-#gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,9 +22,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # test unit to make rspec testing work in Ruby 2.2
 gem 'test-unit'
 # Use ActiveModel has_secure_password
-
-# Use Unicorn as the app server
-# gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -58,6 +51,9 @@ group :development, :test do
   gem 'factory_girl_rails'
 end
 
+#renables renaming rails app
+gem 'rename'
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
@@ -76,6 +72,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
   gem 'rails_12factor'
+  gem 'mysql'
+  gem 'unicorn'
 end

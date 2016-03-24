@@ -1,0 +1,40 @@
+I, [2016-03-24T20:33:15.160997 #5081]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+I, [2016-03-24T20:33:18.022369 #5081]  INFO -- : listening on addr=/home/fifa/fifa16/shared/sockets/unicorn.sock fd=9
+I, [2016-03-24T20:33:18.022500 #5081]  INFO -- : worker=0 spawning...
+I, [2016-03-24T20:33:18.061338 #5081]  INFO -- : worker=1 spawning...
+I, [2016-03-24T20:33:18.062880 #5122]  INFO -- : worker=0 spawned pid=5122
+I, [2016-03-24T20:33:18.063146 #5122]  INFO -- : worker=0 ready
+I, [2016-03-24T20:33:18.099064 #5081]  INFO -- : master process ready
+I, [2016-03-24T20:33:18.100828 #5125]  INFO -- : worker=1 spawned pid=5125
+I, [2016-03-24T20:33:18.101097 #5125]  INFO -- : worker=1 ready
+I, [2016-03-24T20:35:36.693238 #5081]  INFO -- : reaped #<Process::Status: pid 5122 exit 0> worker=0
+I, [2016-03-24T20:35:36.693361 #5081]  INFO -- : reaped #<Process::Status: pid 5125 exit 0> worker=1
+I, [2016-03-24T20:35:36.693558 #5081]  INFO -- : master complete
+I, [2016-03-24T20:37:05.890569 #5741]  INFO -- : Refreshing Gem list
+I, [2016-03-24T20:37:09.465701 #5741]  INFO -- : unlinking existing socket=/home/fifa/fifa16/shared/sockets/unicorn.sock
+I, [2016-03-24T20:37:09.465887 #5741]  INFO -- : listening on addr=/home/fifa/fifa16/shared/sockets/unicorn.sock fd=8
+I, [2016-03-24T20:37:09.466012 #5741]  INFO -- : worker=0 spawning...
+I, [2016-03-24T20:37:09.502302 #5741]  INFO -- : worker=1 spawning...
+I, [2016-03-24T20:37:09.528190 #5744]  INFO -- : worker=0 spawned pid=5744
+I, [2016-03-24T20:37:09.528458 #5744]  INFO -- : worker=0 ready
+I, [2016-03-24T20:37:09.544637 #5741]  INFO -- : master process ready
+I, [2016-03-24T20:37:09.584078 #5747]  INFO -- : worker=1 spawned pid=5747
+I, [2016-03-24T20:37:09.592518 #5747]  INFO -- : worker=1 ready
+I, [2016-03-24T21:00:26.110074 #6365]  INFO -- : executing ["/home/fifa/.rbenv/versions/2.2.3/bin/unicorn", "-c", "config/unicorn.rb", "-E", "production", "-D", {8=>#<Kgio::UNIXServer:/home/fifa/fifa16/shared/sockets/unicorn.sock>}] (in /home/fifa/fifa16)
+I, [2016-03-24T21:00:26.110359 #6365]  INFO -- : forked child re-executing...
+I, [2016-03-24T21:00:26.806307 #6365]  INFO -- : inherited addr=/home/fifa/fifa16/shared/sockets/unicorn.sock fd=8
+I, [2016-03-24T21:00:26.806572 #6365]  INFO -- : Refreshing Gem list
+I, [2016-03-24T21:00:30.269209 #6365]  INFO -- : worker=0 spawning...
+I, [2016-03-24T21:00:30.304765 #6365]  INFO -- : worker=1 spawning...
+I, [2016-03-24T21:00:30.317766 #6369]  INFO -- : worker=0 spawned pid=6369
+I, [2016-03-24T21:00:30.318034 #6369]  INFO -- : worker=0 ready
+I, [2016-03-24T21:00:30.339298 #6365]  INFO -- : master process ready
+I, [2016-03-24T21:00:30.340789 #6372]  INFO -- : worker=1 spawned pid=6372
+I, [2016-03-24T21:00:30.341240 #6372]  INFO -- : worker=1 ready
+E, [2016-03-24T21:25:44.986592 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
