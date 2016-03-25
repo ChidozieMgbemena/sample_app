@@ -38,3 +38,6 @@ I, [2016-03-24T21:00:30.339298 #6365]  INFO -- : master process ready
 I, [2016-03-24T21:00:30.340789 #6372]  INFO -- : worker=1 spawned pid=6372
 I, [2016-03-24T21:00:30.341240 #6372]  INFO -- : worker=1 ready
 E, [2016-03-24T21:25:44.986592 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T04:38:08.849578 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T04:38:47.632078 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T04:38:51.952722 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec

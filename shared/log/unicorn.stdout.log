@@ -506,3 +506,889 @@ ActionController::RoutingError (No route matches [GET] "/testproxy.php"):
   /home/fifa/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
 
 
+Started GET "/about" for 188.220.227.0 at 2016-03-24 21:39:42 +0000
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms)
+Started GET "/rules" for 188.220.227.0 at 2016-03-24 21:39:44 +0000
+Processing by StaticPagesController#rules as HTML
+  Rendered static_pages/rules.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+Started GET "/fixtures" for 188.220.227.0 at 2016-03-24 21:41:25 +0000
+Processing by StaticPagesController#fixtures as HTML
+  Rendered static_pages/fixtures.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 21:41:26 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 213.205.251.248 at 2016-03-24 21:42:44 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/signin" for 213.205.251.248 at 2016-03-24 21:43:34 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (688.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 692ms (Views: 691.8ms | ActiveRecord: 0.2ms)
+Started GET "/signup" for 213.205.251.248 at 2016-03-24 21:43:40 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.6ms)
+  Rendered users/new.html.erb within layouts/application (705.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 734ms (Views: 717.0ms | ActiveRecord: 0.7ms)
+Started POST "/users" for 213.205.251.248 at 2016-03-24 21:44:51 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"73xTiC1VMV9J7gPq21dwywcbHknnka3hQ8MBEDnmFhEmuIXVyQSGN3DTVUyKyCfcEDVhZpnKYirIa1eywH7OiA==", "user"=>{"name"=>"Raq", "email"=>"Raquel-w@hotmail.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my Account"}
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = 'Raquel-w@hotmail.co.uk' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 195ms (Views: 18.8ms | ActiveRecord: 1.2ms)
+Started POST "/users" for 213.205.251.248 at 2016-03-24 21:45:14 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5+9dDcnwy9/h0FSA3BPJQivET1uX3RLiAR3BXmDzK+ouK4tQLaF8t9jtAiaNjJ5VPOowdOmG3SmKtZf8mWvzcw==", "user"=>{"name"=>"Raq", "email"=>"Raquel-w@hotmail.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my Account"}
+  [1m[35mSQL (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'Raquel-w@hotmail.co.uk' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `remember_token`) VALUES (?, ?, ?, ?, ?, ?)  [["name", "Raq"], ["email", "raquel-w@hotmail.co.uk"], ["password_digest", "$2a$10$iEoQdCRqMANnI0UkVJYcr.dgUkyGVg0KMOCVP2KQNTF44hiE5tk2W"], ["created_at", "2016-03-24 21:45:14"], ["updated_at", "2016-03-24 21:45:14"], ["remember_token", "f7b240016d9a9fc3fa2fda2ec6de698f351962ac"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE `users` SET `remember_token` = ?, `updated_at` = ? WHERE `users`.`id` = ?[0m  [["remember_token", "ffbfa96c264cafe3cbbe1ad1924fb0224c929717"], ["updated_at", "2016-03-24 21:45:14"], ["id", 5]]
+  [1m[35m (2.2ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/users/5
+Completed 302 Found in 187ms (ActiveRecord: 6.1ms)
+Started GET "/users/5" for 213.205.251.248 at 2016-03-24 21:45:15 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "ffbfa96c264cafe3cbbe1ad1924fb0224c929717"]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 5]]
+  [1m[36mMicropost Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM `microposts` WHERE `microposts`.`user_id` = ? LIMIT 1[0m  [["user_id", 5]]
+  Rendered users/show.html.erb within layouts/application (13.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 48ms (Views: 16.5ms | ActiveRecord: 2.0ms)
+Started GET "/signin" for 188.220.227.0 at 2016-03-24 21:47:24 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.3ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 21:47:25 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 21:47:27 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 21:49:17 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.2ms)
+Started GET "/fixtures" for 188.220.227.0 at 2016-03-24 21:49:18 +0000
+Processing by StaticPagesController#fixtures as HTML
+  Rendered static_pages/fixtures.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 21:49:29 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/fixtures" for 188.220.227.0 at 2016-03-24 21:49:31 +0000
+Processing by StaticPagesController#fixtures as HTML
+  Rendered static_pages/fixtures.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 21:49:33 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 21:49:35 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 21:49:38 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/users/5" for 213.205.251.248 at 2016-03-24 21:50:49 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "ffbfa96c264cafe3cbbe1ad1924fb0224c929717"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 5]]
+  [1m[36mMicropost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `microposts` WHERE `microposts`.`user_id` = ? LIMIT 1[0m  [["user_id", 5]]
+  Rendered users/show.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 5.1ms | ActiveRecord: 9.5ms)
+Started GET "/users" for 213.205.251.248 at 2016-03-24 21:51:12 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "ffbfa96c264cafe3cbbe1ad1924fb0224c929717"]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` LIMIT 5 OFFSET 0
+  Rendered users/_user.html.erb (1.7ms)
+  Rendered users/index.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 16.3ms | ActiveRecord: 0.8ms)
+Started GET "/" for 197.242.122.49 at 2016-03-24 21:53:06 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started DELETE "/signout" for 213.205.251.248 at 2016-03-24 21:53:51 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pPC76XchUBlVAihkwY6H8KESxVEZEmZ4zw7dUh4bGHRtNG20k3DncWw/fsKQEdDntjy6fmdJqbNEpovw54PA7Q=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "ffbfa96c264cafe3cbbe1ad1924fb0224c929717"]]
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `users` SET `remember_token` = ?, `updated_at` = ? WHERE `users`.`id` = ?[0m  [["remember_token", "d71fa8f27e2ce032a723c5774928fe0d48e51c6c"], ["updated_at", "2016-03-24 21:53:51"], ["id", 5]]
+  [1m[35m (2.0ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 7ms (ActiveRecord: 2.7ms)
+Started GET "/" for 213.205.251.248 at 2016-03-24 21:53:51 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+Started GET "/" for 41.190.14.220 at 2016-03-24 21:55:56 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/signin" for 213.205.251.248 at 2016-03-24 22:00:11 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.2ms)
+Started GET "/tables" for 188.220.227.0 at 2016-03-24 22:01:32 +0000
+Processing by StaticPagesController#tables as HTML
+  Rendered static_pages/tables.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+Started GET "/fixtures" for 188.220.227.0 at 2016-03-24 22:01:35 +0000
+Processing by StaticPagesController#fixtures as HTML
+  Rendered static_pages/fixtures.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 22:01:37 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/" for 206.128.154.26 at 2016-03-24 22:18:14 +0000
+Processing by StaticPagesController#home as */*
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-24 22:40:11 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 00:37:02 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 00:37:05 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 00:37:08 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started GET "/signin" for 188.220.227.0 at 2016-03-25 00:37:10 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 00:37:15 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started POST "/cgi-bin/php/%67%6E/%68%70?%2D%64+%6C%6F5.059232E-321+%2D%64+%6D0.000000%64+%2D%64+%75%6F0.000000E+00%3D0.0000006.918869E-310+%2D%64+%6E%74%3D%22+%2D%64+%6E%65+%2D%64+%75%6F0.000000%72%74+%2D%64+%67%2E%6F%63%5F%65%69%65%74%3D%30+%2D%64+%5F%3D%30+%2D%64+%74+%2D-1.315801E+244" for 109.75.185.95 at 2016-03-25 04:08:09 +0000
+
+ActionController::RoutingError (No route matches [POST] "/cgi-bin/php/%67%6E/%68%70"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  unicorn (5.0.1) lib/unicorn/http_server.rb:562:in `process_client'
+  unicorn (5.0.1) lib/unicorn/http_server.rb:658:in `worker_loop'
+  unicorn (5.0.1) lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  unicorn (5.0.1) lib/unicorn/http_server.rb:132:in `start'
+  unicorn (5.0.1) bin/unicorn:126:in `<top (required)>'
+  /home/fifa/.rbenv/versions/2.2.3/bin/unicorn:23:in `load'
+  /home/fifa/.rbenv/versions/2.2.3/bin/unicorn:23:in `<main>'
+
+
+Started GET "/signin" for 188.220.227.0 at 2016-03-25 04:24:06 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:24:09 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:27:16 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:30:00 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 15ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:32:23 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:32:28 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 2.0ms | ActiveRecord: 0.2ms)
+Started GET "/signin" for 188.220.227.0 at 2016-03-25 04:34:42 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+Started GET "/signup" for 188.220.227.0 at 2016-03-25 04:34:54 +0000
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+Started POST "/users" for 188.220.227.0 at 2016-03-25 04:35:19 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kNQSy7iAAoB/Z9fApIYVYi7ZzOlCOzy6irDtIkzxPY1qAdqpG7OrJHNsIsY0M0XmGYSBUVEF3DtBFDVJNZrOaQ==", "user"=>{"name"=>"akachi", "email"=>"akachiugwa@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my Account"}
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM `users` WHERE `users`.`email` = 'akachiugwa@yahoo.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `users` (`name`, `email`, `password_digest`, `created_at`, `updated_at`, `remember_token`) VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "akachi"], ["email", "akachiugwa@yahoo.com"], ["password_digest", "$2a$10$8t6qpk47cBCJpAOj.TQ/4epk228lQMiuwcwz7Euw5Mk/G3evUsrfa"], ["created_at", "2016-03-25 04:35:19"], ["updated_at", "2016-03-25 04:35:19"], ["remember_token", "1216e27ef17ccced4b119e61f54867ed3edcf523"]]
+  [1m[35m (10.6ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE `users` SET `remember_token` = ?, `updated_at` = ? WHERE `users`.`id` = ?  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"], ["updated_at", "2016-03-25 04:35:19"], ["id", 6]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://fifaboys.co.uk/users/6
+Completed 302 Found in 173ms (ActiveRecord: 14.1ms)
+Started POST "/users" for 188.220.227.0 at 2016-03-25 04:35:49 +0000
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kNQSy7iAAoB/Z9fApIYVYi7ZzOlCOzy6irDtIkzxPY1qAdqpG7OrJHNsIsY0M0XmGYSBUVEF3DtBFDVJNZrOaQ==", "user"=>{"name"=>"akachi", "email"=>"akachiugwa@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my Account"}
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mUser Exists (0.7ms)[0m  [1mSELECT  1 AS one FROM `users` WHERE `users`.`email` = 'akachiugwa@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  Rendered shared/_error_messages.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  Rendered layouts/_header.html.erb (9.2ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 161ms (Views: 12.7ms | ActiveRecord: 1.1ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:35:56 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_micropost_form.html.erb (2.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)[0m
+  Rendered shared/_feed.html.erb (0.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 8.2ms | ActiveRecord: 1.5ms)
+Started GET "/users" for 188.220.227.0 at 2016-03-25 04:35:59 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` LIMIT 5 OFFSET 0
+  Rendered users/_user.html.erb (1.6ms)
+  Rendered users/index.html.erb within layouts/application (15.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.8ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:36:08 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?[0m  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (1.9ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_micropost_form.html.erb (1.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)
+  Rendered shared/_feed.html.erb (0.8ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+Started POST "/microposts" for 188.220.227.0 at 2016-03-25 04:36:33 +0000
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TvLxAjq7SIz1EgOMs1ZZtbF+idzLi6S0vP1maNgWFPm0JzlgmYjhKPkZ9ooj4wkxhiPEZNi1RDV3Wb4DoX3nHQ==", "micropost"=>{"content"=>"Malone vs Oscar \r\n5 - 0"}, "commit"=>"Post"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[36mSQL (8.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES (?, ?, ?, ?)  [["content", "Malone vs Oscar \r\n5 - 0"], ["user_id", 6], ["created_at", "2016-03-25 04:36:33"], ["updated_at", "2016-03-25 04:36:33"]]
+  [1m[36m (2.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 42ms (ActiveRecord: 12.0ms)
+Started POST "/microposts" for 188.220.227.0 at 2016-03-25 04:37:00 +0000
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TvLxAjq7SIz1EgOMs1ZZtbF+idzLi6S0vP1maNgWFPm0JzlgmYjhKPkZ9ooj4wkxhiPEZNi1RDV3Wb4DoX3nHQ==", "micropost"=>{"content"=>"Malone vs Oscar \r\n5 - 0"}, "commit"=>"Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES (?, ?, ?, ?)[0m  [["content", "Malone vs Oscar \r\n5 - 0"], ["user_id", 6], ["created_at", "2016-03-25 04:37:00"], ["updated_at", "2016-03-25 04:37:00"]]
+  [1m[35m (4.7ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 9ms (ActiveRecord: 5.4ms)
+Started POST "/microposts" for 188.220.227.0 at 2016-03-25 04:38:13 +0000
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TvLxAjq7SIz1EgOMs1ZZtbF+idzLi6S0vP1maNgWFPm0JzlgmYjhKPkZ9ooj4wkxhiPEZNi1RDV3Wb4DoX3nHQ==", "micropost"=>{"content"=>"Malone vs Oscar \r\n5 - 0"}, "commit"=>"Post"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES (?, ?, ?, ?)[0m  [["content", "Malone vs Oscar \r\n5 - 0"], ["user_id", 6], ["created_at", "2016-03-25 04:38:13"], ["updated_at", "2016-03-25 04:38:13"]]
+  [1m[35m (2.1ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 21ms (ActiveRecord: 3.0ms)
+Started POST "/microposts" for 188.220.227.0 at 2016-03-25 04:39:12 +0000
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TvLxAjq7SIz1EgOMs1ZZtbF+idzLi6S0vP1maNgWFPm0JzlgmYjhKPkZ9ooj4wkxhiPEZNi1RDV3Wb4DoX3nHQ==", "micropost"=>{"content"=>"Malone vs Oscar \r\n5 - 0"}, "commit"=>"Post"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `microposts` (`content`, `user_id`, `created_at`, `updated_at`) VALUES (?, ?, ?, ?)  [["content", "Malone vs Oscar \r\n5 - 0"], ["user_id", 6], ["created_at", "2016-03-25 04:39:12"], ["updated_at", "2016-03-25 04:39:12"]]
+  [1m[36m (6.7ms)[0m  [1mCOMMIT[0m
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 11ms (ActiveRecord: 7.3ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:40:35 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (1.3ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)[0m
+  [1m[35mMicropost Load (0.3ms)[0m  SELECT  `microposts`.* FROM `microposts` WHERE (user_id = 6)  ORDER BY created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  Rendered shared/_feed_item.html.erb (14.3ms)
+  Rendered shared/_feed.html.erb (16.1ms)
+  Rendered static_pages/home.html.erb within layouts/application (18.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 1.4ms)
+Started DELETE "/microposts/14" for 188.220.227.0 at 2016-03-25 04:40:42 +0000
+Processing by MicropostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8yLHrjZjEhhIFEK4LEn7mtSGaCZlVhwq/WSVsuXjyMUJ9w/MlVC7vEQft768/Kse49slnnZo/Ks2wE3ZnIg7IQ==", "id"=>"14"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[36mMicropost Load (0.4ms)[0m  [1mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = ? AND `microposts`.`id` = ?  ORDER BY created_at DESC LIMIT 1[0m  [["user_id", 6], ["id", 14]]
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM `microposts` WHERE `microposts`.`id` = ?[0m  [["id", 14]]
+  [1m[35m (2.1ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 25ms (ActiveRecord: 3.3ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:40:54 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?[0m  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (2.9ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_micropost_form.html.erb (10.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)
+  [1m[36mMicropost Load (0.3ms)[0m  [1mSELECT  `microposts`.* FROM `microposts` WHERE (user_id = 6)  ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (8.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  Rendered shared/_feed_item.html.erb (13.1ms)
+  Rendered shared/_feed.html.erb (15.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (30.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 22.5ms | ActiveRecord: 9.6ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:40:56 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (1.2ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)[0m
+  [1m[35mMicropost Load (0.1ms)[0m  SELECT  `microposts`.* FROM `microposts` WHERE (user_id = 6)  ORDER BY created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  Rendered shared/_feed_item.html.erb (12.9ms)
+  Rendered shared/_feed.html.erb (14.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.8ms)
+Started GET "/fixtures" for 188.220.227.0 at 2016-03-25 04:41:00 +0000
+Processing by StaticPagesController#fixtures as HTML
+  Rendered static_pages/fixtures.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:41:01 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (2.4ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.5ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)[0m
+  [1m[35mMicropost Load (0.1ms)[0m  SELECT  `microposts`.* FROM `microposts` WHERE (user_id = 6)  ORDER BY created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  Rendered shared/_feed_item.html.erb (13.1ms)
+  Rendered shared/_feed.html.erb (14.9ms)
+  Rendered static_pages/home.html.erb within layouts/application (20.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 21.5ms | ActiveRecord: 0.9ms)
+Started GET "/users" for 188.220.227.0 at 2016-03-25 04:41:05 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` LIMIT 5 OFFSET 0
+  Rendered users/_user.html.erb (13.8ms)
+  Rendered users/index.html.erb within layouts/application (18.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.6ms)
+Started GET "/tables" for 188.220.227.0 at 2016-03-25 04:41:06 +0000
+Processing by StaticPagesController#tables as HTML
+  Rendered static_pages/tables.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms)
+Started DELETE "/signout" for 188.220.227.0 at 2016-03-25 04:41:09 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UY4g2XfbewFFxirJ9cm1A+KmoLRFWLDzfrzlpfIv02arW+i71OjSpUnN389lfOWH1fvtDFZmUHK1GD3Oi0Qggg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "4488851ecfbd218beaba39c93640f31c9c243a83"]]
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE `users` SET `remember_token` = ?, `updated_at` = ? WHERE `users`.`id` = ?[0m  [["remember_token", "a1367af9e3ea0bfe42d1f71ac839ac69355f70e7"], ["updated_at", "2016-03-25 04:41:09"], ["id", 6]]
+  [1m[35m (2.6ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 7ms (ActiveRecord: 3.3ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:43:34 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+Started GET "/signin" for 188.220.227.0 at 2016-03-25 04:43:37 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (8.2ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.2ms)
+Started POST "/sessions" for 188.220.227.0 at 2016-03-25 04:43:55 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3+uHSjWlYfYwvhwaL0aZF597q4iH7Q97iVLpBzgxZyElPk8olpbIUjy16Ry/88mTqCbmMJTT7/pC9jFsQVqUxQ==", "session"=>{"email"=>"akachiugwa@yahoo.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = ? LIMIT 1[0m  [["email", "akachiugwa@yahoo.com"]]
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (12.5ms)[0m  [1mUPDATE `users` SET `remember_token` = ?, `updated_at` = ? WHERE `users`.`id` = ?[0m  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"], ["updated_at", "2016-03-25 04:43:55"], ["id", 6]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/users/6
+Completed 302 Found in 155ms (ActiveRecord: 15.4ms)
+Started GET "/users/6" for 188.220.227.0 at 2016-03-25 04:43:55 +0000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  [1m[36mMicropost Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM `microposts` WHERE `microposts`.`user_id` = ? LIMIT 1[0m  [["user_id", 6]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?  [["user_id", 6]]
+  [1m[36mMicropost Load (0.4ms)[0m  [1mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = ?  ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m  [["user_id", 6]]
+  Rendered microposts/_micropost.html.erb (2.7ms)
+  Rendered users/show.html.erb within layouts/application (7.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 1.4ms)
+Started DELETE "/microposts/15" for 188.220.227.0 at 2016-03-25 04:44:01 +0000
+Processing by MicropostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Gaf0+2YBRQNF+QBKi0JHhMdPmGeHpjb5TcELmqpbRv/jcjyZxTLsp0ny9Uwb9xcA8BLV35SY1niGZdPx0zC1Gw==", "id"=>"15"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[35mMicropost Load (0.5ms)[0m  SELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = ? AND `microposts`.`id` = ?  ORDER BY created_at DESC LIMIT 1  [["user_id", 6], ["id", 15]]
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM `microposts` WHERE `microposts`.`id` = ?  [["id", 15]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 6ms (ActiveRecord: 3.3ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:44:01 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (1.7ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (0.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)[0m
+  [1m[35mMicropost Load (0.2ms)[0m  SELECT  `microposts`.* FROM `microposts` WHERE (user_id = 6)  ORDER BY created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  Rendered shared/_feed_item.html.erb (2.2ms)
+  Rendered shared/_feed.html.erb (3.5ms)
+  Rendered static_pages/home.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 7.4ms | ActiveRecord: 1.1ms)
+Started DELETE "/microposts/13" for 188.220.227.0 at 2016-03-25 04:44:06 +0000
+Processing by MicropostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"w62i5LJLkdPqPXFPNb5PSrA5yYnIv9H7U59ch4cZPuw5eGqGEXg4d+Y2hEmlCx/Oh2SEMduBMXqYO4Ts/nLNCA==", "id"=>"13"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[36mMicropost Load (0.3ms)[0m  [1mSELECT  `microposts`.* FROM `microposts` WHERE `microposts`.`user_id` = ? AND `microposts`.`id` = ?  ORDER BY created_at DESC LIMIT 1[0m  [["user_id", 6], ["id", 13]]
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM `microposts` WHERE `microposts`.`id` = ?[0m  [["id", 13]]
+  [1m[35m (2.3ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 6ms (ActiveRecord: 3.1ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:44:06 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?[0m  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (1.6ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_micropost_form.html.erb (1.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)
+  [1m[36mMicropost Load (0.2ms)[0m  [1mSELECT  `microposts`.* FROM `microposts` WHERE (user_id = 6)  ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  Rendered shared/_feed_item.html.erb (2.6ms)
+  Rendered shared/_feed.html.erb (4.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 22.2ms | ActiveRecord: 1.0ms)
+Started GET "/tables" for 188.220.227.0 at 2016-03-25 04:44:09 +0000
+Processing by StaticPagesController#tables as HTML
+  Rendered static_pages/tables.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.2ms)
+Started GET "/fixtures" for 188.220.227.0 at 2016-03-25 04:44:11 +0000
+Processing by StaticPagesController#fixtures as HTML
+  Rendered static_pages/fixtures.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+Started GET "/users" for 188.220.227.0 at 2016-03-25 04:44:13 +0000
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` LIMIT 5 OFFSET 0
+  Rendered users/_user.html.erb (9.8ms)
+  Rendered users/index.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.7ms)
+Started GET "/users?page=2" for 188.220.227.0 at 2016-03-25 04:44:27 +0000
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35mUser Load (8.6ms)[0m  SELECT  `users`.* FROM `users` LIMIT 5 OFFSET 5
+  Rendered users/_user.html.erb (0.3ms)
+  Rendered users/index.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 14ms (Views: 4.5ms | ActiveRecord: 8.9ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:44:44 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?[0m  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (1.6ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (1.0ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)
+  [1m[36mMicropost Load (0.1ms)[0m  [1mSELECT  `microposts`.* FROM `microposts` WHERE (user_id = 6)  ORDER BY created_at DESC LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1  [["id", 6]]
+  Rendered shared/_feed_item.html.erb (2.6ms)
+  Rendered shared/_feed.html.erb (4.4ms)
+  Rendered static_pages/home.html.erb within layouts/application (20.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.7ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:44:50 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `microposts` WHERE `microposts`.`user_id` = ?  [["user_id", 6]]
+  Rendered shared/_user_info.html.erb (1.5ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_micropost_form.html.erb (1.9ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `microposts` WHERE (user_id = 6)[0m
+  [1m[35mMicropost Load (0.1ms)[0m  SELECT  `microposts`.* FROM `microposts` WHERE (user_id = 6)  ORDER BY created_at DESC LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`id` = ? LIMIT 1[0m  [["id", 6]]
+  Rendered shared/_feed_item.html.erb (11.0ms)
+  Rendered shared/_feed.html.erb (12.7ms)
+  Rendered static_pages/home.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 30ms (Views: 18.8ms | ActiveRecord: 0.7ms)
+Started DELETE "/signout" for 188.220.227.0 at 2016-03-25 04:44:56 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"u/qMsk4uLupCdX8HU5+6wOAoQAfNj9dxXODaf/+yT3hBL0TQ7R2HTk5+igHDKupE13UNv96xN/CXRAIUhtm8nA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "a211605cff247c532245a3f3974d9c96204b8908"]]
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE `users` SET `remember_token` = ?, `updated_at` = ? WHERE `users`.`id` = ?[0m  [["remember_token", "937be439ec72b72ba6bb26dbc6f2a9ae76972a83"], ["updated_at", "2016-03-25 04:44:56"], ["id", 6]]
+  [1m[35m (6.2ms)[0m  COMMIT
+Redirected to http://fifaboys.co.uk/
+Completed 302 Found in 17ms (ActiveRecord: 6.8ms)
+Started GET "/" for 188.220.227.0 at 2016-03-25 04:44:56 +0000
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered static_pages/home.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.3ms)
+Started GET "/signin" for 188.220.227.0 at 2016-03-25 04:44:59 +0000
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1[0m  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms)
+Started POST "/sessions" for 188.220.227.0 at 2016-03-25 04:45:11 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iDFRT1zCutc+WvYHVCVEjws7jlZwMw/oBPqasdOlIu1y5Jkt//ETczJRAwHEkBQLPGbD7mMN72nPXkLaqs7RCQ==", "session"=>{"email"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users` WHERE `users`.`email` = ? LIMIT 1[0m  [["email", "admin"]]
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users` WHERE `users`.`remember_token` = ? LIMIT 1  [["remember_token", "da39a3ee5e6b4b0d3255bfef95601890afd80709"]]
+  Rendered layouts/_header.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 3.5ms | ActiveRecord: 0.6ms)

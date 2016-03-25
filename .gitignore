@@ -30,6 +30,7 @@ doc/
 /log/*
 !/log/.keep
 /tmp
+shared/log/*
 
 #ignore environment secret
 .rbenv-vars
