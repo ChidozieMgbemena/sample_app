@@ -9,7 +9,7 @@ end
 
 def make_users
   admin = User.create!(name:     "FIFA",
-                       email:    "example@railstutorial.org",
+                       email:    "admin@fifaboys.co.uk",
                        password: "_afurumginanya!",
                        password_confirmation: "_afurumginanya!",
                        admin: true)

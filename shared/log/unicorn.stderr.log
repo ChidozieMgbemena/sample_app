@@ -41,3 +41,11 @@ E, [2016-03-24T21:25:44.986592 #6365] ERROR -- : old PID:5741 running with exist
 E, [2016-03-25T04:38:08.849578 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
 E, [2016-03-25T04:38:47.632078 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
 E, [2016-03-25T04:38:51.952722 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T05:11:06.116292 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T05:13:11.251611 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T05:13:48.534945 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T05:19:08.781603 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T05:23:12.844762 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T08:26:00.652281 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T08:27:53.002648 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
+E, [2016-03-25T08:30:33.761428 #6365] ERROR -- : old PID:5741 running with existing pid=/home/fifa/fifa16/shared/pids/unicorn.pid.oldbin, refusing rexec
