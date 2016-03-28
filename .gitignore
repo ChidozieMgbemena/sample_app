@@ -25,6 +25,8 @@ doc/
 .DS_Store
 .idea
 .secret
+config/database.yml
+config/*
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -33,5 +35,9 @@ doc/
 /shared/log/*
 shared/log/*
 shared/pid/*
+shared/log/unicorn.stderr.log
+shared/log/unicorn.stdout.log
+shared/pids/unicorn.pid
+
 #ignore environment secret
 .rbenv-vars
