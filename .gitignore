@@ -32,6 +32,6 @@ doc/
 /tmp
 /shared/log/*
 shared/log/*
-
+shared/pid/*
 #ignore environment secret
 .rbenv-vars
