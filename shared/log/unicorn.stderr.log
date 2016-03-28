@@ -148,3 +148,16 @@ I, [2016-03-25T12:17:49.803030 #1227]  INFO -- : worker=0 ready
 I, [2016-03-25T12:17:49.832032 #1122]  INFO -- : master process ready
 I, [2016-03-25T12:17:49.845893 #1230]  INFO -- : worker=1 spawned pid=1230
 I, [2016-03-25T12:17:49.846150 #1230]  INFO -- : worker=1 ready
+I, [2016-03-28T12:54:59.421563 #1122]  INFO -- : reaped #<Process::Status: pid 1230 exit 0> worker=1
+I, [2016-03-28T12:54:59.521982 #1122]  INFO -- : reaped #<Process::Status: pid 1227 exit 0> worker=0
+I, [2016-03-28T12:54:59.522137 #1122]  INFO -- : master complete
+I, [2016-03-28T12:55:32.751022 #1131]  INFO -- : Refreshing Gem list
+I, [2016-03-28T12:55:37.203623 #1131]  INFO -- : unlinking existing socket=/home/fifa/fifa16/shared/sockets/unicorn.sock
+I, [2016-03-28T12:55:37.203800 #1131]  INFO -- : listening on addr=/home/fifa/fifa16/shared/sockets/unicorn.sock fd=8
+I, [2016-03-28T12:55:37.203937 #1131]  INFO -- : worker=0 spawning...
+I, [2016-03-28T12:55:37.248599 #1131]  INFO -- : worker=1 spawning...
+I, [2016-03-28T12:55:37.270178 #1233]  INFO -- : worker=0 spawned pid=1233
+I, [2016-03-28T12:55:37.270458 #1233]  INFO -- : worker=0 ready
+I, [2016-03-28T12:55:37.284252 #1131]  INFO -- : master process ready
+I, [2016-03-28T12:55:37.296682 #1236]  INFO -- : worker=1 spawned pid=1236
+I, [2016-03-28T12:55:37.296943 #1236]  INFO -- : worker=1 ready
