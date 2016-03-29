@@ -15,15 +15,37 @@
     </div>
 <% else %>
   <div class="center hero-unit">
+
+      <head>
+<style>
+
+body {
+    background-color: #d0e4fe;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+}
+
+</style>
+</head>
+<body>
+
     <h1>Welcome to the FIFA16 Boys Community</h1>
 
     <h2>
-      This is by far the most hilarious fifa community on planet earth. Get ready to be Entertained!
+      This is by far the most hilarious fifa community on planet earth
+    </h2>
+    <h2>
+      Get ready to be Entertained!
     </h2>
 
-    <%# link_to "Sign up now!", signup_path,
+    <%= link_to "Sign up now!", signup_path,
                                 class: "btn btn-large btn-primary" %>
   </div>
 
-  <%= image_tag("fifa2.png", :alt => "fifa 16") %>
+  <%# image_tag("fifa2.png", :alt => "fifa 16") %>
 <% end %>
+
+</body>
